@@ -1,5 +1,5 @@
 #!/bin/bash
-source ../env.sh
+source ./env.sh
 
 # create a cluster with the local registry enabled in containerd
 cat <<EOF | kind create cluster --config=-
