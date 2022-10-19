@@ -1,4 +1,5 @@
 #!/bin/bash
 source ./env.sh
-cd ./cluster && ./kind-cluster.sh
+./cluster/kind-cluster.sh
+kubectl apply -f ./k8s/nginx/nginx-controller.yaml
 
